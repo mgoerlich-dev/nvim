@@ -1,0 +1,5 @@
+backups/*
+plugged/*
+tmp/*
+undo/*
+autoload/plug.vim*
