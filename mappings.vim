@@ -13,8 +13,12 @@ nnoremap <silent> <leader>w! :bw<cr>
 " Save
 nnoremap <leader>, :w<cr>
 
+" Source current file
+nnoremap <silent> <leader>sf :so %<cr>
 " Reload config
-nnoremap <leader>r :so ~/.config/nvim/init.vim<cr>
+nnoremap <silent> <leader>rv :so ~/.config/nvim/init.vim<cr>
+" Reload config, install plugins
+nnoremap <silent> <leader>rp :so ~/.config/nvim/init.vim<cr>:PlugInstall<cr>
 
 " Open configs
 nnoremap <leader>ev :e! ~/.config/nvim/init.vim<cr>
@@ -47,15 +51,12 @@ nnoremap <leader>/ "fyiw /<c-r>f<cr>
 nnoremap <leader>h "fyiw :help <c-r>f<cr>
 nnoremap <leader>s "fyiw :%s/<c-r>f/
 
+" Switch buffers
 nnoremap <right> :bn<cr>
 nnoremap <left> :bp<cr>
 
-" Toggle Tree view on the left
+" Toggle Tree view
 nnoremap <silent> <leader>t :NERDTreeToggle<cr>
-
-
-" Source current file
-nnoremap <silent> <leader>% :source %<cr>
 
 " Keep me centered
 set scrolloff=10

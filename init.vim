@@ -10,11 +10,10 @@ abbr tempalte template
 abbr fitler filter
 abbr applicatoin application
 
-set nocompatible
 set autoread
 
 set history=1000
-set textwidth=80
+set textwidth=0 " Don't wrap my text
 
 " Persistent undo
 set undofile
@@ -29,11 +28,9 @@ set backupdir=$HOME/.config/nvim/backups/
 " Swap file directory
 set directory^=$HOME/.config/nvim/tmp/
 
-if (has('nvim'))
-  " show results of substition as they're happening
-  " but don't open a split
-  set inccommand=nosplit
-endif
+" show results of substition as they're happening
+" but don't open a split
+set inccommand=nosplit
 
 " In Virtualblock mode, move free
 set virtualedit=block

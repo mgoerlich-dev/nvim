@@ -1,5 +1,8 @@
 " Plugins
 "
+
+" {{{ vim-plug
+" 
 " Check wether vim-plug is installed and install if required
 let plugpath = expand('<sfile>:p:h'). '/autoload/plug.vim'
 if !filereadable(plugpath)
@@ -17,21 +20,34 @@ if !filereadable(plugpath)
 endif
 
 call plug#begin()
-Plug 'MaxSt/FlatColor'
-Plug 'vim-airline/vim-airline'  " Statusbar
-Plug 'scrooloose/nerdtree'
-Plug 'neomake/neomake'          " Linting, making, essentially a task runner
+Plug 'MaxSt/FlatColor'         " Colorscheme
+Plug 'vim-airline/vim-airline' " Statusbar
+
+" Linting, making, essentially a task runner
+Plug 'neomake/neomake'
+
+" Code snippets
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+
+" Directory Explorer
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+
+" Autocompletion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Code completion
-Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'eruby'] }
-Plug 'JamshedVesuna/vim-markdown-preview', { 'for': 'markdown' }
+Plug 'mattn/emmet-vim'
+
+" Close braces and stuff
+Plug 'cohama/lexima.vim'
+
+" Languages/Frameworks
 Plug 'posva/vim-vue'
 Plug 'othree/html5.vim'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'digitaltoad/vim-pug'
 Plug 'ap/vim-css-color'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
 call plug#end()
+" }}} 
 
 " Emmet
 let g:user_emmet_install_global = 0
@@ -52,12 +68,8 @@ let g:neomake_javascript_enabled_makers = [ 'standard' ]
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline#extensions#tabline#tab_min_count = 2
+let g:airline#extensions#tabline#tab_min_count = 1
 let g:airline_powerline_fonts = 0
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
 
 " Activate deoplete
 let g:deoplete#enable_at_startup = 1

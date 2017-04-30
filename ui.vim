@@ -36,7 +36,7 @@ set smartindent
 
 " Show invisible characters
 set list
-set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
+set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮,trail:·,nbsp:·
 set showbreak=↪
 
 " higlight conflicts
@@ -80,7 +80,6 @@ set mat=2 " how fast to blink
 set noerrorbells
 set visualbell
 set tm=500
-
 
 if has('mouse')
   set mouse=a
