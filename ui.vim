@@ -2,7 +2,7 @@ scriptencoding utf-8
 
 if !exists('g:colors_name') " Prevent useless redraw on config reload
   syntax on
-  colorscheme flatcolor "Base2Tone_EveningDark
+  colorscheme minimalist
 endif
 
 " Switch cursor based on mode
@@ -17,8 +17,6 @@ endif
 if (has('mac') && empty($TMUX) && has('termguicolors'))
   set termguicolors
 endif
-
-let g:flatcolor_termcolors=16
 
 " Make comments and htmlArgs italic
 highlight Comment cterm=italic gui=italic

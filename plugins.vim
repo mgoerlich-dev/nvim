@@ -20,7 +20,7 @@ if !filereadable(s:plugpath)
 endif
 
 call plug#begin()
-Plug 'MaxSt/FlatColor'         " Colorscheme
+Plug 'dikiaap/minimalist'      " Colorscheme
 Plug 'vim-airline/vim-airline' " Statusbar
 
 " Linting, making, essentially a task runner
