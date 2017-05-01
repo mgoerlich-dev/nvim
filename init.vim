@@ -10,6 +10,7 @@ abbr tempalte template
 abbr fitler filter
 abbr applicatoin application
 
+" Sync buffer with fs
 set autoread
 
 set history=1000
@@ -39,9 +40,11 @@ set virtualedit=block
 set splitbelow
 set splitright
 
+" make substitution work more sane
+set gdefault
+
 "" The rest
 source ~/.config/nvim/mappings.vim
 source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/ui.vim
 source ~/.config/nvim/autocommands.vim
-

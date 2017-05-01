@@ -58,6 +58,10 @@ nnoremap <left> :bp<cr>
 " Toggle Tree view
 nnoremap <silent> <leader>t :NERDTreeToggle<cr>
 
+" improve regexs
+nnoremap / /\v
+vnoremap / /\v
+
 " Keep me centered
 set scrolloff=10
 nnoremap N Nzz
