@@ -45,7 +45,7 @@ set showbreak=↪
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
 " backspace behavior
-set backspace=indent,eol,start
+set backspace=start
 
 " Smart folding
 set foldmethod=indent
