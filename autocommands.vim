@@ -29,13 +29,15 @@ augroup comfort
   "au!
 
   " Keep my cwd up2date
-  "au BufEnter * silent! lcd %:p:h
+  au BufEnter * silent! lcd %:p:h
 
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
-  "au BufReadPost *
+  au BufReadPost *
         \ if line("'\"") >= 1 && line("'\"") <= line("$") |
         \   execute "normal! g`\"" |
         \ endif
-augroup END
 
+  " Reload config on write to vimfile
+  au BufWrite ~/.config/nvim/*.vim source %
+augroup END 
