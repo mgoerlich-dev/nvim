@@ -1,5 +1,10 @@
 scriptencoding utf-8
 
+if !exists('g:colors_name') " Prevent useless redraw on config reload
+  syntax on
+  colorscheme flatcolor "Base2Tone_EveningDark
+endif
+
 " Switch cursor based on mode
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=2
 
@@ -12,9 +17,6 @@ endif
 if (has('mac') && empty($TMUX) && has('termguicolors'))
   set termguicolors
 endif
-
-syntax on
-colorscheme flatcolor "Base2Tone_EveningDark
 
 let g:flatcolor_termcolors=16
 
