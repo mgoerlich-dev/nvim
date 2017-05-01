@@ -56,11 +56,8 @@ set foldcolumn=2
 " Use system clipboard
 set clipboard+=unnamedplus
 
-set laststatus=2 " Always show statusline
-set wildmenu " Enhance CLI completion
 set wildmode=list:longest " complete files like a shell
 set hidden " Allow hidden buffers
-set showcmd " Show incomplete commands
 set noshowmode " don't show which mode diabled for Airline
 set shell=$SHELL
 set cmdheight=1 " command bar height
