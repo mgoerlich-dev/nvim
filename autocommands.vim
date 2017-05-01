@@ -9,7 +9,7 @@ augroup pluginconfig
   au BufNewFile,BufRead *.vue set ft=vue
 
   " Neomake
-  au BufRead,BufWritePre * Neomake
+  au BufRead,BufWrite * Neomake
 augroup END
 
 augroup formating
