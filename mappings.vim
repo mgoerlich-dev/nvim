@@ -1,4 +1,4 @@
-let mapleader = ','
+let g:mapleader = ','
 
 " Load file
 nnoremap <leader>o :e 
@@ -25,7 +25,7 @@ nnoremap <leader>ev :e! ~/.config/nvim/init.vim<cr>
 nnoremap <leader>eg :e! ~/.gitconfig<cr>
 
 " Clear search highlights
-noremap <space> :set hlsearch! hlsearch?<cr>
+noremap <leader><space> :noh<cr>
 
 " spell-checking?
 nnoremap ;se :set invspell spelllang=en_EN<cr>

@@ -1,13 +1,15 @@
+scriptencoding utf-8
+
 " Switch cursor based on mode
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=2
 
 " disable background color erase
-if &term =~'256color'
+if &term =~? '256color'
   set t_ut=
 endif
 
 " enable 24 bit color support if supported
-if (has('mac') && empty($TMUX) && has("termguicolors"))
+if (has('mac') && empty($TMUX) && has('termguicolors'))
   set termguicolors
 endif
 
@@ -24,13 +26,13 @@ highlight htmlArg cterm=italic gui=italic
 set number
 set relativenumber
 
+" Don't wrap by default
 set nowrap
 
 " Indentation
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-set autoindent
 set expandtab
 set smartindent
 
@@ -74,12 +76,12 @@ set nolazyredraw
 set magic " Magic RegExp
 
 set showmatch " show matching braces
-set mat=2 " how fast to blink
+set matchtime=2 " how fast to blink
 
 " error bells
 set noerrorbells
 set visualbell
-set tm=500
+set timeoutlen=500
 
 if has('mouse')
   set mouse=a
@@ -89,6 +91,6 @@ endif
 set colorcolumn=80,100,120
 
 " highlight strings inside C comments
-let c_comment_strings=1
+let g:c_comment_strings=1
 
 filetype plugin indent on
