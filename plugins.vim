@@ -2,7 +2,7 @@
 "
 
 " {{{ vim-plug
-" 
+"
 " Check wether vim-plug is installed and install if required
 let s:plugpath = expand('<sfile>:p:h'). '/autoload/plug.vim'
 if !filereadable(s:plugpath)
@@ -47,7 +47,7 @@ Plug 'cakebaker/scss-syntax.vim'
 Plug 'digitaltoad/vim-pug'
 Plug 'ap/vim-css-color'
 call plug#end()
-" }}} 
+" }}}
 
 " Emmet
 let g:user_emmet_install_global = 0

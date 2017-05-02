@@ -8,11 +8,6 @@ endif
 " Switch cursor based on mode
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=2
 
-" disable background color erase
-if &term =~? '256color'
-  set t_ut=
-endif
-
 " enable 24 bit color support if supported
 if (has('mac') && empty($TMUX) && has('termguicolors'))
   set termguicolors

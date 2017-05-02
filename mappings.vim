@@ -1,7 +1,7 @@
 let g:mapleader = ','
 
 " Load file
-nnoremap <leader>o :e 
+nnoremap <leader>o :e
 
 " Open empty buffer
 nnoremap <silent> <leader>n :enew<cr>

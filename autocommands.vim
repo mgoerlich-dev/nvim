@@ -26,7 +26,7 @@ augroup formating
 augroup END
 
 augroup comfort
-  "au!
+  au!
 
   " Keep my cwd up2date
   au BufEnter * silent! lcd %:p:h
@@ -39,5 +39,5 @@ augroup comfort
         \ endif
 
   " Reload config on write to vimfile
-  au BufWrite ~/.config/nvim/*.vim source %
-augroup END 
+  au BufWritePost ~/.config/nvim/*\.vim source %
+augroup END

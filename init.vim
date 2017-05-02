@@ -1,8 +1,6 @@
 " My nvim confrig, heavily inspired by @nicknisi approach
 set encoding=utf-8
 
-"" Basic stuff:
-
 " Fix some common typos
 abbr funciton function
 abbr teh the
@@ -43,8 +41,9 @@ set splitright
 " make substitution work more sane
 set gdefault
 
-"" The rest
 source ~/.config/nvim/mappings.vim
 source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/ui.vim
 source ~/.config/nvim/autocommands.vim
+
+echom 'Done loading. >^.^<'
