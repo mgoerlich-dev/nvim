@@ -1,17 +1,14 @@
 let g:mapleader = ','
 
-" Load file
-nnoremap <leader>o :e
-
 " Open empty buffer
 nnoremap <silent> <leader>n :enew<cr>
 
 " wipout buffer
-nnoremap <silent> <leader>w :setl bufhidden=delete \| bnext<cr>
-nnoremap <silent> <leader>w! :bw<cr>
+nnoremap <silent> <leader>k :setl bufhidden=delete \| bnext<cr>
+nnoremap <silent> <leader>k! :bw<cr>
 
 " Save
-nnoremap <leader>, :w<cr>
+nnoremap <leader>w :w<cr>
 
 " Source current file
 nnoremap <silent> <leader>sf :so %<cr>
@@ -74,7 +71,7 @@ nnoremap <silent> <leader>f za
 nnoremap <silent> <leader>F zA
 
 " fuzzy finding
-nnoremap <silent> <leader>e :FuzzyOpen<cr>
+nnoremap <silent> <leader>o :FuzzyOpen<cr>
 
 " Keep me centered
 set scrolloff=10
