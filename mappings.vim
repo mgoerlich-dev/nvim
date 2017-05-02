@@ -73,6 +73,9 @@ nnoremap <silent> <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap <silent> <leader>f za
 nnoremap <silent> <leader>F zA
 
+" fuzzy finding
+nnoremap <silent> <leader>e :FuzzyOpen<cr>
+
 " Keep me centered
 set scrolloff=10
 nnoremap N Nzz

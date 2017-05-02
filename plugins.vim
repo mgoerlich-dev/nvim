@@ -37,8 +37,14 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Code completion
 Plug 'mattn/emmet-vim'
 
+" Fuzzy file finder
+Plug 'cloudhead/neovim-fuzzy'
+
 " Close braces and stuff
 Plug 'cohama/lexima.vim'
+
+" Comment helpers
+Plug 'scrooloose/nerdcommenter'
 
 " Languages/Frameworks
 Plug 'posva/vim-vue'
