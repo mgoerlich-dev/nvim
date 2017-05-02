@@ -45,5 +45,3 @@ source ~/.config/nvim/mappings.vim
 source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/ui.vim
 source ~/.config/nvim/autocommands.vim
-
-echom 'Done loading. >^.^<'
