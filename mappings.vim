@@ -62,6 +62,17 @@ nnoremap <silent> <leader>t :NERDTreeToggle<cr>
 nnoremap / /\v
 vnoremap / /\v
 
+" Move between brackets easier
+nnoremap <tab> %
+vnoremap <tab> %
+
+" remove whitespace
+nnoremap <silent> <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+
+" folding
+nnoremap <silent> <leader>f za
+nnoremap <silent> <leader>F zA
+
 " Keep me centered
 set scrolloff=10
 nnoremap N Nzz
