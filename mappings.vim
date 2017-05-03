@@ -1,5 +1,9 @@
 let g:mapleader = ','
 
+" move lines up and down
+nnoremap <silent> <leader>- ddp
+nnoremap <silent> <leader>+ ddkP
+
 " Open empty buffer
 nnoremap <silent> <leader>n :enew<cr>
 
