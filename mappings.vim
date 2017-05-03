@@ -70,6 +70,16 @@ vnoremap <tab> %
 " remove whitespace
 nnoremap <silent> <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
+" quote a word
+nnoremap <leader>" viw<esc>a"<esc>bi"<esc>lel
+nnoremap <leader>' viw<esc>a'<esc>bi'<esc>lel
+vnoremap <leader>" <esc>`<i"<esc>`>la"<esc>
+vnoremap <leader>' <esc>`<i'<esc>`>la'<esc>
+
+" So i can remember them better
+nnoremap H 0
+nnoremap L $
+
 " folding
 nnoremap <silent> <leader>f za
 nnoremap <silent> <leader>F zA
