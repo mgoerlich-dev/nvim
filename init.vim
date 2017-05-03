@@ -1,12 +1,18 @@
 " My nvim confrig, heavily inspired by @nicknisi approach
 set encoding=utf-8
 
+scriptencoding utf-8
+
 " Fix some common typos
-abbr funciton function
-abbr teh the
-abbr tempalte template
-abbr fitler filter
-abbr applicatoin application
+iabbrev funciton function
+iabbrev teh the
+iabbrev tempalte template
+iabbrev fitler filter
+iabbrev applicatoin application
+
+" Convenience shortcuts
+iabbrev @@ m.goerlich199@gmail.com
+iabbrev ccopy © 2017 Manuel Görlich, all rights reserved.
 
 " Sync buffer with fs
 set autoread
