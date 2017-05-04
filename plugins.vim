@@ -84,3 +84,6 @@ let g:UltiSnipsSinppetsDir='~/.config/nvim/ultisnips/'
 
 " NERDTree
 let g:NERDTreeWinPos='right'
+
+" Lexima
+let g:lexima_map_escape = 'jk'

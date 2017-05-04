@@ -14,15 +14,16 @@ nnoremap <silent> <leader>k! :bw<cr>
 " Save
 nnoremap <leader>w :w<cr>
 
+
 " Source current file
 nnoremap <silent> <leader>sf :so %<cr>
 " Reload config
-nnoremap <silent> <leader>rv :so ~/.config/nvim/init.vim<cr>
+nnoremap <silent> <leader>rv :so $MYVIMRC<cr>
 " Reload config, install plugins
-nnoremap <silent> <leader>rp :so ~/.config/nvim/init.vim<cr>:PlugInstall<cr>
+nnoremap <silent> <leader>rp :so $MYVIMRC<cr>:PlugInstall<cr>
 
 " Open configs
-nnoremap <leader>ev :e! ~/.config/nvim/init.vim<cr>
+nnoremap <leader>ev :e! $MYVIMRC<cr>
 nnoremap <leader>eg :e! ~/.gitconfig<cr>
 
 " Clear search highlights
@@ -79,6 +80,11 @@ vnoremap <leader>' <esc>`<i'<esc>`>la'<esc>
 " So i can remember them better
 nnoremap H 0
 nnoremap L $
+
+" I also have CapsLock mapped to ESC on system level but this still makes it easier
+inoremap jk <esc>:w<cr>
+" make it stick TODO: Remove this as soon as jk is trained
+inoremap <esc> <nop>
 
 " folding
 nnoremap <silent> <leader>f za
